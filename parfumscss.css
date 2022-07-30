@@ -116,7 +116,7 @@ footer#footer-grid {
     color: #000;
     transition: opacity 250ms ease;
     position: absolute;
-    left: 0;
+    left: 1rem;
   }
   
   .nav-toggle:focus,
@@ -502,4 +502,5 @@ footer#footer-grid {
 
 
 }
+
 
