@@ -84,7 +84,10 @@ footer#footer-grid {
 
   .nav-title {
     font-size: 4rem;
+  }
 
+  .animate__animated {
+    font-size: 4rem;
   }
 
   /* BARRA DE NAVEGACION */
@@ -496,12 +499,6 @@ footer#footer-grid {
  }
 
  /* ADAPTAMOS EL PRODUCT BOX A UN MEJOR TAMAÑO */
-
-
-  
-
-
-
 
 
 }
