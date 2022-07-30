@@ -24,6 +24,52 @@ CSS
     width: 100%;
   }
 
+  #grilla1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    min-height: 100vh;
+    width: 95%;
+    max-width: 1320px;
+    grid-template-areas: 
+     "header"
+     "main"
+     "product"
+     "aside"
+     "carrusel"
+     "footer";
+}
+
+.border{
+    background-color: blanchedalmond;
+    border: 1px solid #000;
+}
+
+header#encabezado {
+    grid-area: header;
+}
+
+main#main-grid {
+    grid-area: main;
+}
+
+section#product-box{
+    grid-area: product;
+}
+
+aside#aside-grid {
+    grid-area: aside;
+}
+
+section#carrusel {
+    grid-area: carrusel;
+}
+
+footer#footer-grid {
+    grid-area: footer;
+}
+
   /* COMIENZA EL HEADER */
 
   header {
@@ -234,8 +280,8 @@ CSS
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    grid-auto-rows: 1fr;
-    grid-auto-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
     border: 3px solid #000;
   }
 
@@ -248,19 +294,19 @@ CSS
 
   .product-1--intro {
     display: inline-block;
-    font-size: 2rem;
-    margin: 1,2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
   }
 
   .product-1--description {
     display: block;
-    font-size: 1,5rem;
-    margin: 1.2rem;
+    font-size: 1rem;
+    margin: 1rem;
     text-transform: none;
   }
 
   .img-box {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
   }
 
@@ -332,6 +378,7 @@ CSS
   .footer-content {
     background-color: #212121;
     color: white;
+    text-align: center;
   }
 
   .footer__title {
@@ -390,12 +437,17 @@ CSS
 /* COMIENZA EL MEDIA QUERIES */
 
 @media (min-width: 768px) {
+
+  /* CAMBIAMOS LA FORMA DE NUESTRO NAV */ 
+
   .container {
     width: 80%;
   }
+
   .nav-toggle {
     display: none;
   }
+
   .nav {
     visibility: visible;
     display: flex;
@@ -405,10 +457,52 @@ CSS
     position: relative;
     font-size: x-large;
   }
+
   .nav__list {
     display: flex;
     margin: 0;
   }
+
   .nav__item {
     margin: 0 0 0 1.5rem;
   }
+
+  /* HACEMOS APARECER EL CARRUSEL DE PRODUCTOS */
+
+  .row5{
+    visibility: visible;
+    position: relative;
+  }
+
+  /* MEDIA QUERIS PARA COMPUTADORA */
+
+  /* PRIMERO CAMBAIMOS LA DISPOSICION DE LA PAGINA CON GRID */
+
+}
+
+@media (min-width: 1024px) {
+  #grilla1 {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns:auto auto;
+      grid-template-rows: auto auto auto auto auto;
+      min-height: 100vh;
+      grid-template-areas: 
+       "header  header"
+       "main  main"
+       "product  aside"
+       "carrusel  carrusel"
+       "footer footer";
+ }
+
+ /* ADAPTAMOS EL PRODUCT BOX A UN MEJOR TAMAÑO */
+
+
+  
+
+
+
+
+
+}
+
