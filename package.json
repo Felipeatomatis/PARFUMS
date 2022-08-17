@@ -1,0 +1,23 @@
+{
+  "name": "asd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parfumsjs.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipeatomatis/asd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipeatomatis/asd/issues"
+  },
+  "homepage": "https://github.com/Felipeatomatis/asd#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
