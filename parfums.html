@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,35 +12,41 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <!--REDES-->
     <link rel="stylesheet" href="const navToggle = document.querySelector.js">
+    <!--ANIMACIONES-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>PARFUMS</title>
 </head>
 <body>
   <div id="grilla1"> 
             <!--HEADER-->
-     <header>
+     <header id="encabezado" class="border">
          <!--NAV BAR--> <!--AGREGAR TRANSICION EN TITULO-->
         <div class="container">
             <div class="row1">
                 <button class="nav-toggle" aria-label="abrir navegacion">
                     <span class="hamburger"></span>
                 </button>
-                <div class="nav-title">PARFUMS</div>
+                <div class="nav-title">
+                  <h1 class="animate__animated animate__flash animate__delay-1s">PARFUMS</h1>
+                </div>
                 <nav class="nav">
                     <ul class="nav__list nav__list--primary">
                         <li class="nav__item">
-                          <a class="nav__link" href="Untitled-1.html">Inicio</a>
+                          <a class="nav__link" href="parfums.html">HOME</a>
                         </li>
                         <li class="nav__item">
-                          <a class="nav__link" href="">Sale</a>
+                          <a class="nav__link" href="">SALE</a>
                         </li>
                         <li class="nav__item">
-                          <a class="nav__link" href="">Hombres</a>
+                          <a class="nav__link" href="">HOMBRES</a>
                         </li>
                         <li class="nav__item">
-                          <a class="nav__link" href="">Mujeres</a>
+                          <a class="nav__link" href="">MUJERES</a>
                         </li>
                         <li class="nav__item">
-                          <a class="nav__link" href="">Contacto</a>
+                          <a class="nav__link" href="">CONTACTO</a>
                         </li>
                       </ul>
                 </nav>
@@ -53,8 +59,8 @@
 
       <!--MAIN PUBLICIDAD-->
 
-      <main>
-            <section class="publicidad-section">
+      <main id="main-grid" class="border">
+            <section >
                 <div class="container">
                     <div class="row2">
 
@@ -63,7 +69,7 @@
                               >Souvage Dior</span>
                             <div class="img-box">
 
-                                <img src="imagenes/push-just-arrived19_1440_1200.webp" alt="Souvage Dior" title="Sauvage dior"/>
+                                <img src="imagenes/push-just-arrived19_1440_1200.webp" alt="Souvage Dior" title="Sauvage dior" class="animate__animated animate__backInRight"/>
 
                             </div>
                             <span class="publicidad-1--description">
@@ -84,7 +90,7 @@
 
      <!--SECTION PRODUCT BOX-->
 
-     <section class="product-box">
+     <section id="product-box" class="border">
          <div class="container">
              <div class="row3">
                  <div class="col">
@@ -153,7 +159,7 @@
 
      <!--ASIDE-->
 
-     <aside class="aside">
+     <aside id="aside-grid" class="border">
       <div class="container">
         <div class="row4">
 
@@ -162,7 +168,7 @@
                   >Paco Rabanne</span>
                 <div class="img-box">
 
-                    <img src="imagenes/9251871293470.jpg" alt="Paco Rabbane" title="Paco Rabanne"/>
+                    <img src="imagenes/9251871293470.jpg" alt="Paco Rabbane" title="Paco Rabanne" class="animate__animated animate__backInRight"/>
 
                 </div>
                 <span class="publicidad-2--description">
@@ -180,7 +186,7 @@
 
     <!--CARRUSEL DE PRODUCTOS-->
 
-    <section class="carrusel">
+    <section id="carrusel" class="border">
       <div class="container">
           <div class="row5">
               <div class="col">
@@ -244,11 +250,11 @@
 
     <!--FOOTER-->
 
-    <footer class="footer">
+    <footer id="footer-grid" class="border">
       <div class="footer-content">
         <div class="container">
           <div class="row6 icon-footer">
-            <div class="col footer__title">Buscanos en nuestras redes</div>
+            <div class="col footer__title">Seguinos en nuestras redes</div>
             <br>
             <div class="col icons">
               <a href="http://facebook.com">
@@ -272,6 +278,7 @@
     <!--CODIGO MENU HAMBURGUESA-->
 
      <script src="/parfumsjs.js"></script>
+
 
   </div>
     
